@@ -5,3 +5,5 @@ class AddGradeAndBirthdateToStudents < ActiveRecord::Migration[5.1]
     add_column :honor_roll, :birthdate, :string
   end
 end
+
+ActiveRecord::Base.establish_connection(:adapter => "sqlite3", :database => "db/artists.sqlite")
